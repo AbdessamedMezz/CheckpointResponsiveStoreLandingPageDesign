@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Gadget Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-indigo-600 tracking-tight">Modern Gadget Store</a>
+            </div>
+
+            <nav class="flex space-x-8 text-sm font-medium">
+                <a href="#" class="text-indigo-600 border-b-2 border-indigo-600 px-1 py-2 transition duration-150">Home</a>
+                <a href="#products" class="text-gray-500 hover:text-indigo-600 px-1 py-2 transition duration-150">Products</a>
+                <a href="#about" class="text-gray-500 hover:text-indigo-600 px-1 py-2 transition duration-150">About</a>
+            </nav>
+
+            <div class="hidden sm:block">
+                <a href="#products" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-150">
+                    View Catalog
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16 px-4 text-center sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
+                Upgrade Your Digital Lifestyle
+            </h1>
+            <p class="text-lg sm:text-xl text-indigo-100 mb-8">
+                Discover our curated collection of premium, next-generation tech essentials designed to elevate your everyday routine.
+            </p>
+            <a href="#products" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition duration-150">
+                Explore Now
+            </a>
+        </div>
+    </section>
+
+    <main id="products" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Featured Products</h2>
+            <p class="mt-2 text-gray-600">Handpicked innovations just for you.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-200">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="Wireless Headphones">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">AuraSound Headphones</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Immersive noise-canceling wireless headphones with up to 40 hours of battery life.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition duration-150">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-200">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60" alt="Smart Watch">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Chronos Smartwatch</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Track your fitness, heart rate, and notifications seamlessly with sleek style.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition duration-150">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-200">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60" alt="Minimalist Sunglasses">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Apex Audio Glasses</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Polarized sunglasses featuring built-in micro open-ear speakers for discrete audio.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition duration-150">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-200">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=500&auto=format&fit=crop&q=60" alt="Wireless Charger">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Nexus Wireless Pad</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Fast 15W multi-device charging dock crafted from premium aluminum and fabric.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition duration-150">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="about" class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-4">Modern Gadget Store</h4>
+                <p class="text-sm leading-relaxed">
+                    We bring you the finest tech gear on the market. Our priority is premium quality, intuitive design, and global accessibility.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-white transition">Support & FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-4">Stay Connected</h4>
+                <p class="text-sm mb-4">Subscribe to get notified about exclusive drops and deals.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email" class="w-full bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded-l focus:outline-none focus:border-indigo-500 text-sm">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r text-sm transition font-medium">Join</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-gray-800 text-center text-xs">
+            <p>&copy; 2026 Modern Gadget Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
